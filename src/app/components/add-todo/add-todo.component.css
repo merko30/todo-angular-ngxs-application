@@ -1,0 +1,45 @@
+input {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline: 0;
+  padding: 10px;
+  border-radius: 13px;
+  border: 1px solid #ededed;
+}
+
+button {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline: 0;
+  padding: 10px;
+  border-radius: 13px;
+  border: 1px solid #ededed;
+  background-color: #ededed;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+}
+
+.message {
+  margin-bottom: 5px;
+  color: crimson;
+  background-color: lightcoral;
+  border: 1px solid crimson;
+  padding: 10px;
+  border-radius: 13px;
+}
+
+* {
+  font-family: Lato;
+}

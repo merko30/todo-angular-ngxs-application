@@ -1,3 +1,19 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+  <h1>Todo application</h1>
+  <add-todo></add-todo>
+  <div id="buttons">
+    <button (click)="changeVisible('all')">All</button>
+    <button (click)="changeVisible('completed')">Completed</button>
+    <button (click)="changeVisible('uncompleted')">Uncompleted</button>
+  </div>
+
+  <div *ngIf='current == "all"'>
+    <app-todo *ngFor="let todo of todos$ | async" [todo]="todo"></app-todo>
+  </div>
+  <div *ngIf='current == "uncompleted"'>
+    <app-todo *ngFor="let todo of uncompleted$ | async" [todo]="todo"></app-todo>
+  </div>
+  <div *ngIf='current == "completed"'>
+    <app-todo *ngFor="let todo of completed$ | async" [todo]="todo"></app-todo>
+  </div>
+</div>

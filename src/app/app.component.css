@@ -1,0 +1,43 @@
+.container {
+  width: 70%;
+  margin: 20vh auto;
+  text-align: center;
+}
+
+* {
+  font-family: Lato;
+}
+
+#buttons {
+  margin: 5px 0;
+  width: 100%;
+}
+
+#buttons > button {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline: 0;
+  padding: 13px;
+  border: 1px solid #ededed;
+  background-color: #ededed;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+#buttons > button:hover {
+  background-color: white;
+}
+
+#buttons > button:nth-child(1) {
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 10px;
+}
+
+#buttons > button:nth-child(3) {
+  border-bottom-right-radius: 10px;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+}

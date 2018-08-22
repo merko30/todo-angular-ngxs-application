@@ -1,0 +1,7 @@
+<div style="margin-bottom: 20px;">
+  <div class="message" *ngIf="message">{{message}}</div>
+  <div>
+    <input type="text" [(ngModel)]="description" value={{description}}>
+    <button style="margin-left: 10px" (click)="add()">Add todo</button>
+  </div>
+</div>

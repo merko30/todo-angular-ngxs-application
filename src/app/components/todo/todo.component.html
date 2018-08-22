@@ -1,0 +1,12 @@
+<div id="todo">
+  <p>
+    {{todo.description}}
+  </p>
+
+  <div class="icons">
+    <fa-icon *ngIf="todo.completed !== true" style="margin-right: 10px;color:lightgreen" (click)="complete(todo.id)" [icon]="faCheckCircle"></fa-icon>
+
+    <fa-icon style="color:crimson" (click)="removeTodo(todo.id)" [icon]="faWindowClose"></fa-icon>
+  </div>
+
+</div>
